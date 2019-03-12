@@ -21,3 +21,8 @@ Route::resource('kategori','KategoriController');
 Route::get('/bladetem', function () {
     return view('layouts.master');
 });
+
+//templating admin
+Route::get('/admin', function () {
+    return view('admin.template');
+});
