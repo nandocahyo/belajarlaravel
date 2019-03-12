@@ -4,9 +4,10 @@
 	<title></title>
 </head>
 <body>
-	<h1>Hello Word</h1>
+	<h1>Ini Sidebar</h1>
 	
-@section('content')
-<h2>Ini adalah halaman konten belajar yield</h2>
+	@section('content')
+	<h3>Ini content</h3>
+	@stop
 </body>
 </html>

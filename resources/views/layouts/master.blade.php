@@ -9,13 +9,13 @@
 	}
 </style>
 <body>
-@include('layouts.sidebar')
-<h1>Hello World!</h1>
 
-<p>This page has a light blue background color!</p>
-@yield('content')
-
+<table border="7">
+	<tr height="40">
+		<td width="150">@include('layouts.sidebar')</td>
+		<td width="250">@yield('content')</td>
+	</tr>
+</table>
 @extends('layouts.ektensi')
-
 </body>
 </html>

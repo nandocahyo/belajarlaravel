@@ -4,7 +4,8 @@
 	<title></title>
 </head>
 <body>
-<h1>Halaman Extens</h1>
+
+<h2>Ini adalah halaman extens</h2>
 
 </body>
 </html>
