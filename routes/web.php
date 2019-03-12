@@ -17,3 +17,7 @@ Route::get('/', function () {
 
 Route::resource('kategori','KategoriController');
 
+//belajar blade
+Route::get('/bladetem', function () {
+    return view('layouts.master');
+});
