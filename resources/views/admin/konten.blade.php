@@ -1,18 +1,4 @@
 
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        Dashboard
-        <small>Control panel</small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
-      </ol>
-    </section>
-
-    <!-- Main content -->
-    <section class="content">
       <!-- Small boxes (Stat box) -->
       <div class="row">
         <div class="col-lg-3 col-xs-6">
@@ -115,7 +101,7 @@
             <div class="box-body chat" id="chat-box">
               <!-- chat item -->
               <div class="item">
-                <img src="dist/img/user4-128x128.jpg" alt="user image" class="online">
+                <img src="{{url('asset/dist/img/user4-128x128.jpg')}}" alt="user image" class="online">
 
                 <p class="message">
                   <a href="#" class="name">
@@ -142,7 +128,7 @@
               <!-- /.item -->
               <!-- chat item -->
               <div class="item">
-                <img src="dist/img/user3-128x128.jpg" alt="user image" class="offline">
+                <img src="{{url('asset/dist/img/user3-128x128.jpg')}}" alt="user image" class="offline">
 
                 <p class="message">
                   <a href="#" class="name">
@@ -157,7 +143,7 @@
               <!-- /.item -->
               <!-- chat item -->
               <div class="item">
-                <img src="dist/img/user2-160x160.jpg" alt="user image" class="offline">
+                <img src="{{url('asset/dist/img/user2-160x160.jpg')}}" alt="user image" class="offline">
 
                 <p class="message">
                   <a href="#" class="name">
@@ -513,6 +499,4 @@
       </div>
       <!-- /.row (main row) -->
 
-    </section>
-    <!-- /.content -->
-  
+    

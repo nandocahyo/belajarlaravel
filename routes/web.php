@@ -16,6 +16,8 @@ Route::get('/', function () {
 });
 
 Route::resource('kategori','KategoriController');
+Route::get('kategori','KategoriController@index');
+
 
 //belajar blade
 Route::get('/bladetem', function () {
@@ -25,4 +27,9 @@ Route::get('/bladetem', function () {
 //templating admin
 Route::get('/admin', function () {
     return view('admin.template');
+});
+
+//tempalte kategori
+Route::get('/temkat', function () {
+    return view('kategori.KategoriController');
 });

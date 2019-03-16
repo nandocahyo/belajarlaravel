@@ -12,10 +12,15 @@ class KategoriController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $data = Kategori::all();
-        return view('kategori',compact('data'));
+        //search data
+        if ($request->has('cari')) {
+            $data = \App\Kategori::where('nama_kategori','LIKE','%'.$request->cari.'%')->get();
+        }else{
+            $data = Kategori::all();
+        }
+        return view('kategori.index',compact('data'));
     }
 
     /**
@@ -23,9 +28,10 @@ class KategoriController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function create()
     {
-        //
+        return view('kategori.create');
     }
 
     /**
@@ -36,7 +42,8 @@ class KategoriController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = Kategori::create($request->all());
+        return redirect('kategori');
     }
 
     /**
@@ -58,7 +65,8 @@ class KategoriController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = Kategori::findOrFail($id);
+        return view('kategori.edit',compact('data'));
     }
 
     /**
@@ -70,7 +78,9 @@ class KategoriController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = Kategori::find($id);
+        $data->update($request->all());
+        return redirect('kategori');
     }
 
     /**
@@ -81,6 +91,8 @@ class KategoriController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data=Kategori::find($id);
+        $data->delete();
+        return redirect('kategori');
     }
 }

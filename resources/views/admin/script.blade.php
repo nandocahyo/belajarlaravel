@@ -1,5 +1,7 @@
 <!-- jQuery 3 -->
 <script src="{{url('/asset/bower_components/jquery/dist/jquery.min.js')}}"></script>
+<!-- DataTables -->
+<script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="{{url('/asset/bower_components/jquery-ui/jquery-ui.min.js')}}"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
